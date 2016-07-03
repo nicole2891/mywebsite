@@ -2823,8 +2823,8 @@
     color: #fff;
     background-color: #eee;
     height: 700px;
-    background: -webkit-linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/computer.jpg) no-repeat center center fixed;
-    background: linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/computer.jpg) no-repeat center center fixed;
+    background: -webkit-linear-gradient(rgba(52, 73, 94, 0.5), rgba(52, 73, 94, 0.8)), url(../images/jasper.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(52, 73, 94, 0.5), rgba(52, 73, 94, 0.8)), url(../images/jasper.jpg) no-repeat center center fixed;
     background-size: cover;
     text-transform: capitalize
   }
@@ -2903,7 +2903,7 @@
     height: 50px
   }
   
-  .work {
+  .blog {
     background: -webkit-linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/writing.jpg) no-repeat center center;
     background: linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/writing.jpg) no-repeat center center;
     height: 250px;
@@ -2911,17 +2911,17 @@
     padding-top: 20px
   }
   
-  .work h3,
-  .work p {
+  .blog h3,
+  .blog p {
     color: #fff !important
   }
   
-  .work a {
+  .blog a {
     color: #fff !important;
     text-decoration: underline
   }
   
-  .work-together {
+  .blog-together {
     background: -webkit-linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/collab.jpg) no-repeat center center fixed;
     background: linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/collab.jpg) no-repeat center center fixed;
     height: 550px;
@@ -2930,10 +2930,10 @@
     color: #fff
   }
   
-  .work-together h3,
-  .work-together h4,
-  .work-together p,
-  .work-together label {
+  .blog-together h3,
+  .blog-together h4,
+  .blog-together p,
+  .blog-together label {
     color: #fff
   }
   
@@ -2958,7 +2958,6 @@
   .progress {
     overflow: hidden;
     height: 30px;
-    margin-bottom: 20px;
     background-color: #f5f5f5;
     border-radius: 3px;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
