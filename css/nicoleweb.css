@@ -2904,11 +2904,11 @@
   }
   
   .blog {
-    background: -webkit-linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/writing.jpg) no-repeat center center;
-    background: linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/writing.jpg) no-repeat center center;
+    background: -webkit-linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(../images/cookie.jpg) no-repeat center center;
+    background: linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)),  url(../images/cookie.jpg)no-repeat center center;
     height: 250px;
     background-size: cover;
-    padding-top: 20px
+    padding-top: 60px
   }
   
   .blog h3,
@@ -2922,8 +2922,8 @@
   }
   
   .blog-together {
-    background: -webkit-linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/collab.jpg) no-repeat center center fixed;
-    background: linear-gradient(rgba(52, 73, 94, 0.8), rgba(52, 73, 94, 0.8)), url(http://timothy.expert/codepen-resources/collab.jpg) no-repeat center center fixed;
+    background: -webkit-linear-gradient(rgba(52, 73, 94, 10), rgba(52, 73, 94, 10)), url(../images/cookie.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(52, 73, 94, 10), rgba(60, 73, 94, 10)), url(../images/cookie.jpg) no-repeat center center fixed;
     height: 550px;
     background-size: cover;
     padding-top: 50px;
