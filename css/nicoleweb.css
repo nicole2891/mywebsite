@@ -2058,8 +2058,9 @@
   }
   
   .contact {
-    width: 100%;
+    width: 60%;
     margin-bottom: 10px;
+	margin-left:10%;
     background: rgba(0, 0, 0, 0.3);
     border: none;
     outline: none;
@@ -2568,193 +2569,42 @@
     transition: height 0.35s ease
   }
   
-  .nav {
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none
-  }
-  
-  .nav:before,
-  .nav:after {
-    content: " ";
-    display: table
-  }
-  
-  .nav:after {
-    clear: both
-  }
-  
-  .nav>li {
-    position: relative;
-    display: block
-  }
-  
-  .nav>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 15px
-  }
-  
-  .nav>li>a:hover,
-  .nav>li>a:focus {
-    text-decoration: none
-  }
-  
-  .nav>li.disabled>a {
-    color: #999
-  }
-  
-  .nav>li.disabled>a:hover,
-  .nav>li.disabled>a:focus {
-    color: #999;
-    text-decoration: none;
-    background-color: transparent;
-    cursor: not-allowed
-  }
-  
-  .nav .open>a,
-  .nav .open>a:hover,
-  .nav .open>a:focus {
-    background-color: #eee;
-    border-color: #428bca
-  }
-  
-  .nav .nav-divider {
-    height: 1px;
-    margin: 9px 0;
-    overflow: hidden;
-    background-color: #e5e5e5
-  }
-  
-  .nav>li>a>img {
-    max-width: none
-  }
-  
-  .nav-tabs {
-    border-bottom: 1px solid #ddd
-  }
-  
-  .nav-tabs>li {
-    float: left;
-    margin-bottom: -1px
-  }
-  
-  .nav-tabs>li>a {
-    margin-right: 2px;
-    line-height: 1.42857;
-    border: 1px solid transparent
-  }
-  
-  .nav-tabs>li>a:hover {
-    border-color: #eee #eee #ddd
-  }
-  
-  .nav-tabs>li.active>a,
-  .nav-tabs>li.active>a:hover,
-  .nav-tabs>li.active>a:focus {
-    color: #555;
-    background-color: #f2f3f8;
-    border: 1px solid #ddd;
-    border-bottom-color: transparent;
-    cursor: default
-  }
-  
-  .nav-pills {
-    color: #ccc
-  }
-  
-  .nav-pills>li {
-    float: left;
-    border-bottom: 1px solid #3f3f46
-  }
-  
-  .nav-pills>li+li {
-    margin-left: 2px
-  }
-  
-  .nav-pills>li.active>a,
-  .nav-pills>li.active>a:hover,
-  .nav-pills>li.active>a:focus {
-    color: #428bca;
-    background-color: #27272c
-  }
-  
-  .nav-stacked>li {
-    float: none
-  }
-  
-  .nav-stacked>li+li {
-    margin-top: 2px;
-    margin-left: 0
-  }
-  
-  .nav-justified,
-  .nav-tabs.nav-justified {
-    width: 100%
-  }
-  
-  .nav-justified>li,
-  .nav-tabs.nav-justified>li {
-    float: none
-  }
-  
-  .nav-justified>li>a,
-  .nav-tabs.nav-justified>li>a {
-    text-align: center;
-    margin-bottom: 5px
-  }
-  
-  .nav-justified>.dropdown .dropdown-menu {
-    top: auto;
-    left: auto
-  }
-  
-  @media (min-width: 768px) {
-    .nav-justified>li,
-    .nav-tabs.nav-justified>li {
-      display: table-cell;
-      width: 1%
-    }
-    .nav-justified>li>a,
-    .nav-tabs.nav-justified>li>a {
-      margin-bottom: 0
-    }
-  }
-  
-  .nav-tabs-justified,
-  .nav-tabs.nav-justified {
-    border-bottom: 0
-  }
-  
-  .nav-tabs-justified>li>a,
-  .nav-tabs.nav-justified>li>a {
-    margin-right: 0
-  }
-  
-  .nav-tabs-justified>.active>a,
-  .nav-tabs.nav-justified>.active>a,
-  .nav-tabs-justified>.active>a:hover,
-  .nav-tabs.nav-justified>.active>a:hover,
-  .nav-tabs-justified>.active>a:focus,
-  .nav-tabs.nav-justified>.active>a:focus {
-    border: 1px solid #ddd
-  }
-  
-  @media (min-width: 768px) {
-    .nav-tabs-justified>li>a,
-    .nav-tabs.nav-justified>li>a {
-      border-bottom: 1px solid #ddd
-    }
-    .nav-tabs-justified>.active>a,
-    .nav-tabs.nav-justified>.active>a,
-    .nav-tabs-justified>.active>a:hover,
-    .nav-tabs.nav-justified>.active>a:hover,
-    .nav-tabs-justified>.active>a:focus,
-    .nav-tabs.nav-justified>.active>a:focus {
-      border-bottom-color: #f2f3f8
-    }
-  }
-  
+  nav {
+	background-color: black;
+}
+
+.topnav {
+	text-align: center;	
+}
+	
+	/* this is specific to the list (li) in the nav element */
+nav li {
+	display: inline;
+	list-style-type:none;
+	padding: 75px
+}
+				/* '>' is not in the MTA courseware */
+nav li > a {		/* '>' is to direct it to the 'a' = anchor, don't need to use '>' but it's best practise */
+	text-decoration:none;
+	color: white;
+	font-size: 20px;
+}
+
+ul.topnav li a:hover {		/* I do not need 'ul' or '.topnav' together or indidually can be taken out*/
+	transition: 0.9s;	/* slow fade into highlight when hovered over*/
+	background-color: orange;
+	border: 1px red solid
+	}
+
+	/* @media query is not in MTA courseware*/
+@media screen and (min-width:900px) {
+.icon {
+display: none;
+}
+}
+
+	/* use viewpoint for images to get the image size correct*/
+
   .tab-content>.tab-pane {
     display: none
   }
@@ -2818,7 +2668,7 @@
     left: 40%
   }
   
-  .jumbotron {
+  .menujpg {
     padding: 30px;
     color: #fff;
     background-color: #eee;
@@ -2829,14 +2679,14 @@
     text-transform: capitalize
   }
   
-  .jumbotron hr {
+  .menujpg hr {
     width: 80%;
     margin: 5px auto;
     border-color: #eee
   }
   
-  .jumbotron h1,
-  .jumbotron .h1 {
+  .menujpg h1,
+  .menujpg .h1 {
     color: inherit;
     font-size: 56px;
     text-align: center;
@@ -2846,44 +2696,44 @@
     text-transform: uppercase
   }
   
-  .jumbotron h2,
+  .menujpg h2,
   .jumbotron .h2 {
     font-weight: 100;
     letter-spacing: 2px;
     color: inherit
   }
   
-  .jumbotron p {
+  .menujpg p {
     font-size: 21px;
     font-weight: 200
   }
   
-  .container .jumbotron {
+  .container .menujpg {
     border-radius: 6px
   }
   
-  .jumbotron .container {
+  .menujpg .container {
     max-width: 100%
   }
   
   @media screen and (min-width: 768px) {
-    .jumbotron {
+    .menujpg {
       padding-top: 48px;
       padding-bottom: 48px
     }
-    .container .jumbotron {
+    .container .menujpg {
       padding-left: 60px;
       padding-right: 60px
     }
   }
   
   @media screen and (max-width: 768px) {
-    .jumbotron h1,
-    .jumbotron .h1 {
+    .menujpg h1,
+    .menujpg .h1 {
       font-size: 35px
     }
-    .jumbotron h2,
-    .jumbotron .h2 {
+    .menujpg h2,
+    .menujpg .h2 {
       font-size: 21px
     }
   }
@@ -2911,30 +2761,6 @@
     padding-top: 60px
   }
   
-  .blog h3,
-  .blog p {
-    color: #fff !important
-  }
-  
-  .blog a {
-    color: #fff !important;
-    text-decoration: underline
-  }
-  
-  .blog-together {
-    background: -webkit-linear-gradient(rgba(52, 73, 94, 10), rgba(52, 73, 94, 10)), url(../images/cookie.jpg) no-repeat center center fixed;
-    background: linear-gradient(rgba(52, 73, 94, 10), rgba(60, 73, 94, 10)), url(../images/cookie.jpg) no-repeat center center fixed;
-    height: 550px;
-    background-size: cover;
-    padding-top: 50px;
-    color: #fff
-  }
-  
-  .blog-together h3,
-  .blog-together h4,
-  .blog-together p,
-  .blog-together label {
-    color: #fff
   }
   
   @-webkit-keyframes progress-bar-stripes {
